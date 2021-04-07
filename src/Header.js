@@ -10,10 +10,13 @@ function Header() {
                     <img src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png" alt="Starbucks_icon" />
                     
                 </Link>
-                <Link to="">
+                <Link className="header__link" to="/menu">
                     Menu
                 </Link>
+                <Link className="header__link" >Rewards</Link>
+                <Link className="header__link" >Gift Cards</Link>
             </div>
+            
             <div className="header__right">
 
             </div>
