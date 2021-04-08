@@ -2,6 +2,8 @@ import * as React from "react";
 import { motion } from "framer-motion";
 import { MenuItem } from "./MenuItem";
 import { useState } from "react";
+import FindAStore from "./FindAStore";
+import MenuLink from "./MenuLink";
 
 const variants = {
   open: {
@@ -75,15 +77,18 @@ export const Navigation = ({ toggle }) => {
           />
         </motion.ul>
       ) : (
-        <motion.ui variants={variants}>
+        <motion.ul variants={variants}>
           <MenuLink link="Menu" icon onClick={() => setShowMenuCategories(true)} />
           <MenuLink link="Rewards" />
           <MenuLink link="Gift Cards" />
           <motion.hr variants={variants2} />
-          <motion.div className="navigation__buttons">
-
+          <motion.div className="navigation__buttons" variant={variants2}>
+            {/* WE NEED USER HERE */}
           </motion.div>
-        </motion.ui>
+          <motion.div variants={variants2}>
+            <FindAStore />
+          </motion.div>
+        </motion.ul>
       )}
       </>
     )

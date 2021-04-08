@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { Example } from './Example';
+import FindAStore from './FindAStore';
 import './Header.css';
 
 function Header() {
@@ -18,7 +20,9 @@ function Header() {
             </div>
             
             <div className="header__right">
-
+                <Example />
+                <FindAStore />
+                {/* USER HERE */}
             </div>
         </div>
     )
